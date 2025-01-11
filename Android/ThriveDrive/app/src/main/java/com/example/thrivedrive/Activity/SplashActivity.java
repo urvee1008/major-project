@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
         ImageView gifImageView = findViewById(R.id.gifImageView);
         Glide.with(this)
                 .asGif()
-                .load(R.drawable.splashscreenapp)
+                .load(R.drawable.splashscreen)
                 .into(gifImageView);
 
         sp = getSharedPreferences(ConstantData.SP_NAME,MODE_APPEND);
@@ -46,6 +46,11 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 if(isLogin){
                     Intent intent=new Intent(SplashActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else {
+                    Intent intent=new Intent(SplashActivity.this, IntroActivity.class);
                     startActivity(intent);
                     finish();
                 }

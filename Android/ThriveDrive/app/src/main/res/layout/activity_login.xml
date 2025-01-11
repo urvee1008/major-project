@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPerson"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btnlogin"
         android:layout_width="0dp"
         android:layout_margin="32dp"
         style="@android:style/Widget.Button"
@@ -103,7 +103,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnfacebook"
